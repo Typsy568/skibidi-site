@@ -18,6 +18,7 @@ intents.guilds = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 app = Flask(__name__)
+CORS(app)
 
 # === WEB ENDPOINT ===
 @app.route('/log', methods=['POST'])
