@@ -46,7 +46,7 @@ async def bot_log(ip, content):
         channel = await guild.create_text_channel(safe_ip, category=category)
 
     try:
-        await channel.send(f"**Log from `{ip}`:**
+        await channel.send(f"**Log from `{ip}`:**\n{content}")
 {content}")
         print(f"✅ Sent to #{safe_ip}")
     except Exception as e:
