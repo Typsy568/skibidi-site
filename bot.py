@@ -1,11 +1,13 @@
+import os
 from flask import Flask, request, jsonify
 from threading import Thread
 import discord
 from discord.ext import commands
 import asyncio
 
-TOKEN = os.environ.get("DISCORD_BOT_TOKEN")  # Replace this with your bot token
-GUILD_ID = 1357177503894077481     # Replace with your Discord server ID
+# === CONFIG ===
+TOKEN = os.environ.get("DISCORD_BOT_TOKEN")  # Securely load from environment
+GUILD_ID = 1357177503894077481  # integer
 CATEGORY_NAME = "ai-logs"
 
 # === INTENTS ===
