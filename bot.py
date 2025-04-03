@@ -4,6 +4,7 @@ from threading import Thread
 import discord
 from discord.ext import commands
 import asyncio
+from flask_cors import CORS
 
 # === CONFIG ===
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN")  # Securely load from environment
