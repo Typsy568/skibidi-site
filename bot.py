@@ -52,7 +52,8 @@ async def bot_log(ip, content):
 # === START FLASK IN BACKGROUND ===
 def run_flask():
     print("🚀 Starting Flask server on http://localhost:5050")
-    app.run(port=5050)
+    app.run(host="0.0.0.0", port=5050)
+
 
 # === BOT READY ===
 @bot.event
