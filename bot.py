@@ -8,7 +8,7 @@ from flask_cors import CORS
 
 # === CONFIG ===
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN")  # Securely load from environment
-GUILD_ID = 1357177503894077481  # integer
+GUILD_ID = 1357572265327464498  # integer
 CATEGORY_NAME = "ai-logs"
 
 # === INTENTS ===
